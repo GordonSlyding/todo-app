@@ -1,11 +1,16 @@
 <div class="container">
   <div class="col justify-content-center bg-light mt-3 p-3 shadow-lg toolbar">
     <div class="d-flex">
-      <button type="button" class="btn">
+      <button type="button" class="btn" (click)="createTask(newTask)">
         <span class="new">create task</span>
       </button>
       <div class="custom-width input-group ml-2">
-        <input type="text" class="form-control" placeholder="new task" />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="new task"
+          [(ngModel)]="newTask"
+        />
       </div>
     </div>
   </div>
